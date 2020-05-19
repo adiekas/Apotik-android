@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/apotikl"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#dddddd" />
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/tentang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TENTANG KAMI"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/textViewDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="45dp"
+        android:text="Aplikasi ini saya buat untuk memudahkan mencari Apotik yang ada disekitar anda dengan mudah."
+        android:textColor="#455A64"
+        android:gravity="center"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/garisAbu"
+        android:layout_below="@+id/sosmed1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#455A64"
+        android:layout_marginHorizontal="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/fotob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+    </RelativeLayout>
+
+    <!--<distroku.hummasoft.com.distroku.customfonts.MyTextView_Roboto_Regular-->
+    <!--android:id="@+id/hubungi"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="HUBUNGI KAMI"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textStyle="bold"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+</LinearLayout>
+

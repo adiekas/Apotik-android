@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="apotikku.hummasoft.com.apotikku.HomeActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="0dp"
+            android:background="#3498db"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/deskrpsi1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/white"
+                    android:minHeight="?attr/actionBarSize"
+                    app:titleTextColor="@android:color/black">
+                </android.support.v7.widget.Toolbar>
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/ic_search" />
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/ic_cross_circle" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:background="#cacaca" />-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/tabMode"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#ffffff"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingBottom="5dp">-->
+
+        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+        <!--android:id="@+id/terdekat"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Terdekat"-->
+        <!--android:textColor="#3498db"-->
+        <!--android:textSize="15dp" />-->
+
+
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="#cacaca" />-->
+
+
+        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+        <!--android:id="@+id/cekkesehatan"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Menerima Cek Kesehatan"-->
+        <!--android:textColor="#3498db"-->
+        <!--android:textSize="15dp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_gravity="center" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#f5f5f5"-->
+        <!--android:elevation="1dp"-->
+        <!--android:paddingBottom="60dp"-->
+        <!--android:clipToPadding="false"-->
+        <!--android:id="@+id/recyclerView">-->
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+        <FrameLayout
+            android:id="@+id/frameFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="600dp">
+
+        <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18dp"
+            android:text="info"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

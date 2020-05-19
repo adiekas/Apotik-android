@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:Hours="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="apotikku.hummasoft.com.apotikku.PropertyDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_property"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/gambarditel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="210dp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/profilpotik" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="71dp"
+                                android:layout_marginTop="140dp"
+                                android:background="#55000000"
+                                android:orientation="vertical"
+                                android:paddingBottom="10dp">
+
+                                <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                                    android:id="@+id/Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="One Mei Farma"
+                                    android:textColor="#ffffff"
+                                    android:textSize="22dp" />
+
+                            </LinearLayout>
+
+
+                    </FrameLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#dddddd" />
+
+                    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Deskripsi"
+                        android:textColor="@color/subText"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/deskripsi"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/textViewDeskripsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/description"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Detail Tempat"
+                        android:textColor="@color/subText"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/deskripsi"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        tools:ignore="ExtraText">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="118dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            tools:ignore="ExtraText">
+
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="2dp"
+                                android:src="@drawable/mape" />
+
+                            <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/alamat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Alamat"
+                                android:textColor="#ffffff"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent" />
+
+                        <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/alamatdeskripsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="@string/description1"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="118dp"
+                            android:layout_marginTop="6dp"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            tools:ignore="ExtraText">
+
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="right"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="2dp"
+                                android:src="@drawable/jame" />
+
+                            <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/jam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:text="Jam Buka"
+                                android:textColor="#ffffff"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/jam_buka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Senin - Minggu 07.00 - 20.00 WIB"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent" />
+
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/h"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/senin"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Senin"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/seninWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_marginLeft="0dp"-->
+                        <!--android:layout_toRightOf="@+id/senin"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/i"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/selasa"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Selasa"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/selasaWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/selasa"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/j"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/rabu"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Rabu"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/rabuWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/rabu"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/k"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/kamis"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Kamis"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/kamisWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/kamis"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/l"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/jumat"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Jumat"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/jumatWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/jumat"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/m"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/sabtu"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Sabtu"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/sabtuWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_marginBottom="0dp"-->
+                        <!--android:layout_toRightOf="@+id/sabtu"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/n"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:color/transparent">-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/minggu"-->
+                        <!--android:layout_width="85dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Minggu"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+                        <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+                        <!--android:id="@+id/mingguWaktu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/minggu"-->
+                        <!--android:paddingHorizontal="10dp"-->
+                        <!--android:text="08.00-20.00"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15dp" />-->
+
+
+                        <!--</RelativeLayout>-->
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="118dp"
+                            android:layout_marginTop="6dp"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            tools:ignore="ExtraText">
+
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/bumi" />
+
+                            <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/provinsi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:text="Provinsi"
+                                android:textColor="#ffffff"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/provinsideskripsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jawa Timur"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="118dp"
+                            android:layout_marginTop="6dp"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            tools:ignore="ExtraText">
+
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_gravity="right"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginRight="2dp"
+                                android:src="@drawable/telefon" />
+
+                            <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                                android:id="@+id/telp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:text="Telefon"
+                                android:textColor="#ffffff"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                            android:id="@+id/nomor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="0851-0142-2647"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Galeri"
+                        android:textColor="@color/subText"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_weight="8"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="2"
+                        android:columnOrderPreserved="false"
+                        android:padding="14dp"
+                        android:rowCount="3">
+
+                        <!-- Row 1 -->
+
+                        <!-- Column 1 -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="2"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_margin="4dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ps" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <!-- Column 2 -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_margin="4dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/pelitasar" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </GridLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@+id/isiJarak"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/deskripsi"
+                        android:fitsSystemWindows="true">
+
+
+                        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="12dp"
+                            tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="96dp"
+                            android:background="@drawable/deskrpsi1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:ignore="ExtraText">
+
+                            <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Petunjuk Arah"
+                                android:textColor="#3498db"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="38dp"
+                                android:layout_gravity="right"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/map" />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"></LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/toolbar_property" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

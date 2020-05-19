@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstActivity">
+
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/screen1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="#dddddd"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Screen 1" />
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/screen2"
+        android:text="Screen 2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#dddddd"
+        android:elevation="1dp"
+        android:gravity="center" />
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/screen3"
+        android:text="Screen 3"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#dddddd"
+        android:elevation="1dp"
+        android:gravity="center" />
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/screen4"
+        android:text="Screen 4"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#dddddd"
+        android:elevation="1dp"
+        android:gravity="center" />
+
+    <apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/screen5"
+        android:text="Screen 5"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#dddddd"
+        android:elevation="1dp"
+        android:gravity="center" />
+
+    <!--<apotikku.hummasoft.com.apotikku.customfonts.MyTextView_Roboto_Regular-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/screen6"-->
+        <!--android:text="Screen 6"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="#dddddd"-->
+        <!--android:elevation="1dp"-->
+        <!--android:gravity="center" />-->
+
+
+
+
+
+
+</LinearLayout>

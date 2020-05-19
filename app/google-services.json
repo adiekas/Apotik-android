@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "732135968104",
+    "firebase_url": "https://apotikku-98b50.firebaseio.com",
+    "project_id": "apotikku-98b50",
+    "storage_bucket": "apotikku-98b50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732135968104:android:83185de24ef85df9",
+        "android_client_info": {
+          "package_name": "apotikku.hummasoft.com.apotikku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732135968104-2fs1422ujb8aliqt2tgcntjlplu60cnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFR1SOq22jlEetYXZB1y4VRXB4xKuG2qI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
